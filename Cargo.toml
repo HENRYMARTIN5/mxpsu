@@ -1,0 +1,17 @@
+[package]
+name = "mxpsu"
+version = "0.1.0"
+edition = "2021"
+description = "A crate to control Aim TTi MX series laboratory power supplies"
+license = "MIT"
+repository = "https://github.com/HENRYMARTIN5/mx100tp"
+
+[dependencies]
+thiserror = "2.0.12"
+serialport = { version = "4.2", optional = true }
+phf = { version = "0.11", features = ["macros"] }
+
+[features]
+default = ["socket", "serial"]
+socket = []
+serial = ["dep:serialport"]
