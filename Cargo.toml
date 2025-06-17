@@ -1,10 +1,10 @@
 [package]
 name = "mxpsu"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2021"
 description = "A crate to control Aim TTi MX series laboratory power supplies"
 license = "MIT"
-repository = "https://github.com/HENRYMARTIN5/mx100tp"
+repository = "https://github.com/HENRYMARTIN5/mxpsu"
 
 [dependencies]
 thiserror = "2.0.12"
